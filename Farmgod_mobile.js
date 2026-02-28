@@ -1081,7 +1081,7 @@ if ($('#mobileHeader').length > 0 && !$('#farmgod_hold_btn').length) {
       !farmBusy &&
       !(
         Accountmanager.farm.last_click &&
-        n - Accountmanager.farm.last_click < 190
+        n - Accountmanager.farm.last_click < 250
       )
     ) {
       farmBusy = true;
