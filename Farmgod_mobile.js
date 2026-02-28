@@ -594,7 +594,7 @@ if ($('#mobileHeader').length > 0 && !$('#farmgod_hold_btn').length) {
     holdInterval = setInterval(() => {
       const first = $('.farmGod_icon').first();
       if (first.length) first.trigger('click');
-    }, 150);
+    }, 140);
   });
 
   btn.on('touchend touchcancel', function () {
@@ -1081,7 +1081,7 @@ if ($('#mobileHeader').length > 0 && !$('#farmgod_hold_btn').length) {
       !farmBusy &&
       !(
         Accountmanager.farm.last_click &&
-        n - Accountmanager.farm.last_click < 250
+        n - Accountmanager.farm.last_click < 180
       )
     ) {
       farmBusy = true;
